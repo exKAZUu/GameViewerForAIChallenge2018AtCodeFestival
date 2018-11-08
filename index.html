@@ -1,1 +1,35 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>2048 Game Viewer</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="body">
+      <div id="frame1">
+        <div class="game-container"></div>
+      </div>
+      <div id="stats">
+        TURN
+        <div id="turn"></div>
+      </div>
+      <div id="frame2">
+        <div class="game-container"></div>
+      </div>
+    </div>
+    <div id="controls">
+      <input id="file" type="file" />
+      <button id="restart-button">Restart</button>
+      <label for="game-interval-slider">Speed</label>
+      <input id="game-interval-slider" type="range" min="100" max="1500" step="50" value="500" />
+    </div>
+  </div>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>2048 Game Viewer</title>
- </head>
+</head>
 
 <body>
   <div id="app">
@@ -21,10 +21,19 @@
       </div>
     </div>
     <div id="controls">
-      <input id="file" type="file" />
-      <button id="restart-button">Restart</button>
-      <label for="game-interval-slider">Speed</label>
-      <input id="game-interval-slider" type="range" min="100" max="1500" step="50" value="500" />
+      <div>
+        <input id="file" type="file" />
+        <button id="restart-button">Reload</button>
+        <label for="game-interval-slider">再生速度（速←　→遅）</label>
+        <input id="game-interval-slider" type="range" min="100" max="1500" step="50" value="500" />
+      </div>
+      <div>
+        <label for="frame-slider">再生位置</label>
+        <input id="frame-slider" type="range" min="0" max="0" step="1" value="0" style="flex-grow: 1" />
+        <button id="frame-prev">戻る</button>
+        <button id="play-toggle">停止</button>
+        <button id="frame-next">進む</button>
+      </div>
     </div>
   </div>
 <script type="text/javascript" src="main.js"></script></body>
